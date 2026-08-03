@@ -1,0 +1,1146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Seattle Love Broker — Premier Matchmaking &amp; Relationship Advisory | Seattle, WA</title>
+  <meta name="description" content="Seattle Love Broker is a premier matchmaking and relationship advisory firm in Seattle, WA. Expert human matchmakers connecting successful professionals with quality, relationship-minded singles.">
+  <meta property="og:title" content="Seattle Love Broker — Premier Matchmaking & Relationship Advisory">
+  <meta property="og:description" content="Seattle's premier matchmaking firm. Expert human matchmakers connecting successful professionals with quality, relationship-minded singles.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mllovebroker.com/">
+  <meta property="og:image" content="https://mllovebroker.com/wp-content/uploads/2017/11/SLBlogo-scaled.jpg">
+  <link rel="canonical" href="https://mllovebroker.com/">
+  <link rel="icon" href="https://mllovebroker.com/wp-content/uploads/2017/09/cropped-logo-7-1-32x32.png" sizes="32x32">
+
+  <!-- Fonts: Cormorant Garamond (display) + Crimson Pro (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Crimson+Pro:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+
+  <style>
+    /* Hallmark · pre-emit critique: P5 H4 E5 S5 R5 V5 */
+    /* Hallmark · genre: editorial · macrostructure: Letter
+     * theme: custom · vibe: "hushed salon, aged parchment, quiet authority"
+     * paper: oklch(96.5% 0.012 75) · accent: oklch(58% 0.14 80) muted-gold
+     * display: Cormorant Garamond · body: Crimson Pro
+     * axes: light / classical-serif / warm
+     * enrichment: none (typography only) · nav: N9 · footer: Ft6
+     * H5 letter hero knobs: salutation=greeting, body=2-paragraphs, signoff=typed-name
+     */
+
+    /* ───────────────────────────────────────
+       1 · TOKENS
+       ─────────────────────────────────────── */
+
+    :root {
+      --color-paper:     oklch(96.5% 0.012 75);
+      --color-paper-2:   oklch(92%   0.018 72);
+      --color-paper-3:   oklch(88%   0.014 74);
+      --color-rule:      oklch(82%   0.010 75);
+      --color-neutral:   oklch(55%   0.008 70);
+      --color-muted:     oklch(42%   0.008 65);
+      --color-ink:       oklch(19%   0.010 55);
+      --color-accent:    oklch(58%   0.14  80);
+      --color-focus:     oklch(50%   0.16  80);
+      --color-overlay:   oklch(19%   0.010 55 / 0.60);
+
+      --font-display:    "Cormorant Garamond", ui-serif, Georgia, serif;
+      --font-body:       "Crimson Pro", ui-serif, Georgia, serif;
+
+      --text-xs:         0.64rem;
+      --text-sm:         0.8rem;
+      --text-base:       1.125rem;
+      --text-md:         1.25rem;
+      --text-lg:         1.5625rem;
+      --text-xl:         1.953rem;
+      --text-2xl:        2.441rem;
+      --text-3xl:        3.052rem;
+      --text-display:    clamp(2.75rem, 5vw + 1rem, 4.5rem);
+      --text-display-s:  clamp(2rem, 3vw + 0.75rem, 3.25rem);
+
+      --space-3xs: 0.125rem;
+      --space-2xs: 0.25rem;
+      --space-xs:  0.5rem;
+      --space-sm:  0.75rem;
+      --space-md:  1rem;
+      --space-lg:  1.5rem;
+      --space-xl:  2.5rem;
+      --space-2xl: 4rem;
+      --space-3xl: 6rem;
+      --space-4xl: 9rem;
+
+      --page-gutter:     clamp(1.25rem, 5vw, 4rem);
+      --letter-measure:  58ch;
+
+      --ease-out:    cubic-bezier(0.16, 1, 0.3, 1);
+      --ease-in:     cubic-bezier(0.7,  0, 0.84, 0);
+      --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+      --dur-micro:   120ms;
+      --dur-short:   220ms;
+      --dur-long:    420ms;
+
+      --z-base:      1;
+      --z-raised:    10;
+      --z-sticky:    200;
+
+      --rule-hairline: 1px solid var(--color-rule);
+      --radius-sm:     2px;
+    }
+
+    /* ───────────────────────────────────────
+       2 · RESET & BASE
+       ─────────────────────────────────────── */
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { overflow-x: clip; scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+    body {
+      overflow-x: clip;
+      font-family: var(--font-body);
+      font-size: var(--text-base);
+      font-weight: 400;
+      line-height: 1.65;
+      color: var(--color-ink);
+      background-color: var(--color-paper);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      padding-inline: max(0px, env(safe-area-inset-left));
+      padding-bottom: max(0px, env(safe-area-inset-bottom));
+    }
+    img, picture, video, svg { display: block; max-width: 100%; }
+    img { height: auto; }
+    input, button, textarea, select { font: inherit; }
+    ul, ol { list-style: none; }
+
+    /* ───────────────────────────────────────
+       3 · TYPOGRAPHY
+       ─────────────────────────────────────── */
+
+    h1, h2, h3 {
+      font-family: var(--font-display);
+      font-style: normal;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      line-height: 1.15;
+      color: var(--color-ink);
+      overflow-wrap: anywhere;
+      min-width: 0;
+    }
+    h1 { font-size: var(--text-display); line-height: 1.08; margin-bottom: var(--space-xl); }
+    h2 { font-size: var(--text-2xl); margin-bottom: var(--space-lg); }
+    h3 { font-size: var(--text-lg); font-weight: 500; margin-bottom: var(--space-xs); }
+
+    p { max-width: 65ch; }
+    p + p { margin-top: var(--space-md); }
+
+    a {
+      color: var(--color-ink);
+      text-decoration-color: var(--color-rule);
+      text-underline-offset: 0.2em;
+      transition: text-decoration-color var(--dur-micro) var(--ease-out);
+    }
+    a:hover { text-decoration-color: var(--color-accent); }
+    a:focus-visible {
+      outline: 2px solid var(--color-focus);
+      outline-offset: 3px;
+      border-radius: var(--radius-sm);
+    }
+
+    .muted { color: var(--color-muted); }
+
+    /* ───────────────────────────────────────
+       4 · LAYOUT
+       ─────────────────────────────────────── */
+
+    .section-narrow {
+      max-width: var(--letter-measure);
+      margin-inline: auto;
+      padding-inline: var(--page-gutter);
+    }
+    .section-wide {
+      max-width: 56rem;
+      margin-inline: auto;
+      padding-inline: var(--page-gutter);
+    }
+    main { padding-top: var(--space-4xl); }
+
+    /* ───────────────────────────────────────
+       5 · NAV  (N9 Edge-aligned minimal)
+       ─────────────────────────────────────── */
+
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: var(--space-lg) var(--page-gutter);
+      position: sticky;
+      top: 0;
+      z-index: var(--z-sticky);
+      background-color: var(--color-paper);
+    }
+    .nav__logo { text-decoration: none; flex-shrink: 0; }
+    .nav__logo img {
+      width: clamp(120px, 12vw, 160px);
+      height: auto;
+    }
+    .nav__cta {
+      font-family: var(--font-body);
+      font-size: var(--text-sm);
+      font-weight: 400;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: var(--color-ink);
+      border: var(--rule-hairline);
+      padding: var(--space-xs) var(--space-lg);
+      white-space: nowrap;
+      transition: background-color var(--dur-short) var(--ease-out),
+                  color var(--dur-short) var(--ease-out);
+    }
+    .nav__cta:hover {
+      background-color: var(--color-ink);
+      color: var(--color-paper);
+    }
+    .nav__cta:focus-visible {
+      outline: 2px solid var(--color-focus);
+      outline-offset: 3px;
+    }
+    @media (hover: hover) and (pointer: fine) {
+      .nav__cta:active { transform: translateY(1px); }
+    }
+
+    /* ───────────────────────────────────────
+       6 · LETTER OPENING (H5)
+       ─────────────────────────────────────── */
+
+    .letter-opening { margin-bottom: var(--space-3xl); }
+
+    .salutation {
+      font-family: var(--font-display);
+      font-style: italic;
+      font-size: var(--text-xl);
+      line-height: 1.3;
+      color: var(--color-muted);
+      margin-bottom: var(--space-xl);
+    }
+
+    .lede {
+      font-size: var(--text-md);
+      line-height: 1.6;
+      color: var(--color-ink);
+    }
+
+    /* ───────────────────────────────────────
+       7 · SEPARATOR  (* * *)
+       ─────────────────────────────────────── */
+
+    .separator {
+      border: none;
+      max-width: var(--letter-measure);
+      margin: var(--space-3xl) auto;
+      padding-inline: var(--page-gutter);
+      text-align: center;
+    }
+    .separator::before {
+      content: "* \2002 * \2002 *";
+      font-family: var(--font-display);
+      font-size: var(--text-md);
+      color: var(--color-accent);
+      letter-spacing: 0.2em;
+    }
+
+    /* ───────────────────────────────────────
+       8 · ABOUT (breakout grid)
+       ─────────────────────────────────────── */
+
+    .about__grid {
+      display: grid;
+      grid-template-columns: minmax(0, 2fr) minmax(0, 3fr);
+      gap: var(--space-2xl);
+      align-items: start;
+    }
+    .about__figure img {
+      width: 100%;
+      aspect-ratio: 887 / 952;
+      object-fit: cover;
+    }
+    .about__body p + p { margin-top: var(--space-md); }
+    .about__signature {
+      margin-top: var(--space-xl);
+      font-family: var(--font-display);
+      font-size: var(--text-md);
+      font-weight: 600;
+      line-height: 1.5;
+    }
+    .about__signature .muted {
+      font-family: var(--font-body);
+      font-size: var(--text-sm);
+      font-weight: 400;
+      display: block;
+      margin-top: var(--space-3xs);
+    }
+
+    /* ───────────────────────────────────────
+       9 · SERVICES (prose with hairlines)
+       ─────────────────────────────────────── */
+
+    .section-intro {
+      color: var(--color-muted);
+      margin-bottom: var(--space-2xl);
+    }
+
+    .services-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+    .service {
+      padding-block: var(--space-xl);
+      border-top: var(--rule-hairline);
+    }
+    .service:last-child {
+      border-bottom: var(--rule-hairline);
+    }
+    .service h3 {
+      display: flex;
+      align-items: baseline;
+      gap: var(--space-sm);
+    }
+    .service h3::before {
+      content: "";
+      display: inline-block;
+      width: 6px;
+      height: 6px;
+      background-color: var(--color-accent);
+      border-radius: 50%;
+      flex-shrink: 0;
+      transform: translateY(-0.1em);
+    }
+    .service p {
+      margin-top: var(--space-xs);
+      padding-inline-start: calc(6px + var(--space-sm));
+      color: var(--color-muted);
+    }
+
+    /* ───────────────────────────────────────
+       10 · PULL-QUOTE (T3-style)
+       ─────────────────────────────────────── */
+
+    .pull-quote {
+      margin-block: var(--space-3xl);
+      padding-block: var(--space-2xl);
+      position: relative;
+    }
+    .pull-quote::before {
+      content: "\201C";
+      font-family: var(--font-display);
+      font-size: clamp(4rem, 8vw, 7rem);
+      line-height: 1;
+      color: var(--color-accent);
+      position: absolute;
+      top: var(--space-lg);
+      left: var(--page-gutter);
+      opacity: 0.35;
+    }
+    .pull-quote p {
+      font-family: var(--font-display);
+      font-style: italic;
+      font-size: var(--text-xl);
+      line-height: 1.45;
+      color: var(--color-ink);
+      max-width: 50ch;
+    }
+    .pull-quote footer {
+      margin-top: var(--space-lg);
+    }
+    .pull-quote cite {
+      font-family: var(--font-body);
+      font-style: normal;
+      font-size: var(--text-sm);
+      color: var(--color-muted);
+      letter-spacing: 0.04em;
+    }
+
+    /* ───────────────────────────────────────
+       11 · IMAGE BAND (full-bleed)
+       ─────────────────────────────────────── */
+
+    .image-band {
+      position: relative;
+      width: 100%;
+      margin-block: var(--space-4xl);
+      overflow: hidden;
+    }
+    .image-band img {
+      width: 100%;
+      height: clamp(22rem, 45vh, 34rem);
+      object-fit: cover;
+      object-position: center 40%;
+    }
+    .image-band__overlay {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-start;
+      padding: var(--space-2xl) var(--page-gutter);
+      background: linear-gradient(
+        to top,
+        var(--color-overlay),
+        oklch(19% 0.010 55 / 0.15) 60%,
+        transparent
+      );
+    }
+    .image-band__text {
+      font-family: var(--font-display);
+      font-size: var(--text-md);
+      font-weight: 500;
+      color: var(--color-paper);
+      letter-spacing: 0.02em;
+      max-width: 40ch;
+    }
+
+    /* ───────────────────────────────────────
+       12 · PROCESS (F4 step sequence)
+       ─────────────────────────────────────── */
+
+    .process-steps {
+      counter-reset: step;
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-xl);
+    }
+    .process-step {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: var(--space-lg);
+      align-items: baseline;
+    }
+    .process-number {
+      font-family: var(--font-display);
+      font-size: var(--text-3xl);
+      font-weight: 400;
+      line-height: 1;
+      color: var(--color-accent);
+      opacity: 0.6;
+      min-width: 2ch;
+      text-align: right;
+    }
+    .process-step h3 { margin-bottom: var(--space-2xs); }
+    .process-step p { color: var(--color-muted); }
+
+    /* ───────────────────────────────────────
+       13 · FAQ (accordion)
+       ─────────────────────────────────────── */
+
+    .faq-item {
+      border-top: var(--rule-hairline);
+    }
+    .faq-item:last-of-type {
+      border-bottom: var(--rule-hairline);
+    }
+    .faq-item summary {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: var(--space-md);
+      padding: var(--space-lg) 0;
+      cursor: pointer;
+      font-family: var(--font-display);
+      font-size: var(--text-md);
+      font-weight: 500;
+      line-height: 1.35;
+      color: var(--color-ink);
+      list-style: none;
+    }
+    .faq-item summary::-webkit-details-marker { display: none; }
+    .faq-item summary::after {
+      content: "+";
+      font-family: var(--font-body);
+      font-size: var(--text-lg);
+      font-weight: 300;
+      color: var(--color-neutral);
+      flex-shrink: 0;
+      transition: transform var(--dur-short) var(--ease-out);
+    }
+    .faq-item[open] summary::after {
+      transform: rotate(45deg);
+    }
+    .faq-item summary:focus-visible {
+      outline: 2px solid var(--color-focus);
+      outline-offset: 3px;
+      border-radius: var(--radius-sm);
+    }
+
+    .faq-answer {
+      display: grid;
+      grid-template-rows: 0fr;
+      transition: grid-template-rows var(--dur-long) var(--ease-in-out);
+    }
+    .faq-item[open] .faq-answer {
+      grid-template-rows: 1fr;
+    }
+    .faq-answer__inner {
+      overflow: hidden;
+    }
+    .faq-answer p {
+      padding-bottom: var(--space-lg);
+      color: var(--color-muted);
+      line-height: 1.7;
+    }
+
+    /* ───────────────────────────────────────
+       14 · CTA (C3 typographic link)
+       ─────────────────────────────────────── */
+
+    .letter-closing { margin-bottom: var(--space-4xl); }
+
+    .cta-wrap {
+      margin-top: var(--space-xl);
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-lg) var(--space-2xl);
+    }
+    .cta-link {
+      font-family: var(--font-display);
+      font-size: var(--text-md);
+      font-weight: 500;
+      text-decoration: underline;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 0.25em;
+      text-decoration-color: var(--color-ink);
+      color: var(--color-ink);
+      white-space: nowrap;
+      transition: text-decoration-thickness var(--dur-micro) var(--ease-out),
+                  text-decoration-color var(--dur-micro) var(--ease-out);
+    }
+    .cta-link:hover {
+      text-decoration-thickness: 2px;
+      text-decoration-color: var(--color-accent);
+    }
+    .cta-link--muted {
+      color: var(--color-muted);
+      text-decoration-color: var(--color-rule);
+    }
+    .cta-link--muted:hover {
+      color: var(--color-ink);
+      text-decoration-color: var(--color-accent);
+    }
+
+    /* ───────────────────────────────────────
+       15 · FOOTER (Ft6 Letter close)
+       ─────────────────────────────────────── */
+
+    .foot-letter {
+      padding: var(--space-3xl) var(--page-gutter) var(--space-2xl);
+      max-width: 60ch;
+      margin-inline: auto;
+      border-top: var(--rule-hairline);
+    }
+    .foot-letter__close {
+      font-family: var(--font-display);
+      font-style: italic;
+      font-size: var(--text-lg);
+      line-height: 1.5;
+    }
+    .foot-letter__sign {
+      font-style: normal;
+      font-weight: 600;
+      display: block;
+      margin-top: var(--space-2xs);
+    }
+    .foot-letter__location {
+      font-size: var(--text-sm);
+      color: var(--color-muted);
+      margin-top: var(--space-sm);
+    }
+
+    .foot-letter__social {
+      display: flex;
+      gap: var(--space-md);
+      margin-top: var(--space-xl);
+    }
+    .foot-letter__social-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 2rem;
+      height: 2rem;
+      color: var(--color-neutral);
+      text-decoration: none;
+      transition: color var(--dur-micro) var(--ease-out);
+    }
+    .foot-letter__social-link:hover { color: var(--color-ink); }
+    .foot-letter__social-link svg { width: 18px; height: 18px; }
+
+    .foot-letter__ps {
+      font-style: italic;
+      font-size: var(--text-sm);
+      color: var(--color-muted);
+      margin-top: var(--space-xl);
+      max-width: 50ch;
+    }
+    .foot-letter__ps a {
+      color: var(--color-muted);
+      text-decoration-color: var(--color-rule);
+    }
+    .foot-letter__ps a:hover { text-decoration-color: var(--color-accent); }
+
+    .foot-letter__copy {
+      font-size: var(--text-xs);
+      color: var(--color-neutral);
+      margin-top: var(--space-2xl);
+      letter-spacing: 0.02em;
+    }
+
+    /* ───────────────────────────────────────
+       16 · MOTION (entrance reveal)
+       ─────────────────────────────────────── */
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    .reveal.is-visible {
+      animation: reveal var(--dur-long) var(--ease-out) forwards;
+      animation-delay: calc(var(--i, 0) * 80ms);
+    }
+    @keyframes reveal {
+      to { opacity: 1; transform: none; }
+    }
+
+    /* ───────────────────────────────────────
+       17 · RESPONSIVE
+       ─────────────────────────────────────── */
+
+    /* ── Tablet (≥ 40 rem / ~640 px) ── */
+    @media (min-width: 40rem) {
+      .pull-quote p { font-size: var(--text-2xl); }
+    }
+
+    /* ── Desktop (≥ 60 rem / ~960 px) ── */
+    @media (min-width: 60rem) {
+      main { padding-top: var(--space-4xl); }
+    }
+
+    /* ── Wide (≥ 90 rem / ~1440 px) ── */
+    @media (min-width: 90rem) {
+      .section-wide { max-width: 62rem; }
+    }
+
+    /* ── Mobile collapse (< 60 rem) ── */
+    @media (max-width: 59.99rem) {
+      .about__grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-xl);
+      }
+      .about__figure img {
+        max-height: 28rem;
+        object-position: center 20%;
+      }
+    }
+
+    /* ── Small mobile (< 40 rem / ~640 px) ── */
+    @media (max-width: 39.99rem) {
+      h1 { font-size: var(--text-display-s); }
+      h2 { font-size: var(--text-xl); }
+      .salutation { font-size: var(--text-lg); }
+      .pull-quote p { font-size: var(--text-lg); }
+      .pull-quote::before { font-size: 3.5rem; }
+      .process-step {
+        grid-template-columns: 1fr;
+        gap: var(--space-xs);
+      }
+      .process-number {
+        font-size: var(--text-xl);
+        text-align: left;
+      }
+      .image-band img { height: 18rem; }
+      .foot-letter__close { font-size: var(--text-md); }
+      .nav__cta {
+        font-size: var(--text-xs);
+        padding: var(--space-xs) var(--space-md);
+        min-height: 44px;
+        display: flex;
+        align-items: center;
+      }
+    }
+
+    /* ───────────────────────────────────────
+       18 · REDUCED MOTION
+       ─────────────────────────────────────── */
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 150ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 150ms !important;
+      }
+      html { scroll-behavior: auto; }
+      .reveal {
+        animation: reveal-reduced 150ms linear forwards;
+        transform: none;
+      }
+      @keyframes reveal-reduced { to { opacity: 1; transform: none; } }
+      .faq-answer { transition: none; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ════════════════════════════════════════
+       NAV (N9 Edge-aligned minimal)
+       ════════════════════════════════════════ -->
+
+  <header class="nav" id="site-nav" role="banner">
+    <a href="https://mllovebroker.com/" class="nav__logo" aria-label="Seattle Love Broker — Home">
+      <img src="https://mllovebroker.com/wp-content/uploads/2017/11/SLBlogo-scaled.jpg"
+           alt="Seattle Love Broker" width="160" height="79" loading="eager"
+           fetchpriority="high">
+    </a>
+    <a href="https://mllovebroker.com/register/" class="nav__cta" id="nav-cta">
+      Book a Consultation →
+    </a>
+  </header>
+
+
+  <main>
+
+    <!-- ════════════════════════════════════════
+         LETTER OPENING (H5)
+         ════════════════════════════════════════ -->
+
+    <section class="section-narrow letter-opening reveal" style="--i:0" id="hero">
+      <p class="salutation">Dear friend,</p>
+      <h1>Find the Love of Your Life</h1>
+      <p class="lede">
+        Seattle Love Broker is a premier matchmaking and relationship advisory
+        firm, connecting accomplished professionals with exceptional,
+        relationship&#8209;minded singles across the United States.
+      </p>
+      <p>
+        For over thirty&#8209;five years, we have dedicated ourselves to one
+        thing: helping discerning individuals find lasting, meaningful
+        connections. We are not an app. We are not an algorithm. We are real
+        people, doing careful work, on your behalf.
+      </p>
+    </section>
+
+    <hr class="separator" aria-hidden="true">
+
+
+    <!-- ════════════════════════════════════════
+         ABOUT (breakout grid with photograph)
+         ════════════════════════════════════════ -->
+
+    <section class="section-wide reveal" style="--i:1" id="about">
+      <div class="about__grid">
+        <figure class="about__figure">
+          <img src="https://mllovebroker.com/wp-content/uploads/2021/08/about-us.jpg"
+               alt="Monique Le — Founder and Chief Matchmaker at Seattle Love Broker"
+               width="887" height="952" loading="lazy">
+        </figure>
+        <div class="about__body">
+          <h2>A Trusted Name in Premier Matchmaking</h2>
+          <p>
+            A top&#8209;tier matchmaker living and working in Seattle for over
+            35 years, founder Monique Le works with discerning bachelors and
+            bachelorettes across the United States, seeking quality
+            introductions and lasting connections.
+          </p>
+          <p>
+            Seattle Love Broker uses dedicated human matchmakers to screen and
+            select high&#8209;caliber matches for our clients. Our clientele
+            consists of successful business owners, professionals, civic
+            leaders, and elite individuals from all backgrounds and
+            ethnicities.
+          </p>
+          <p>
+            We maintain one of the largest matchmaking databases on the West
+            Coast, with a pipeline constantly renewed with sophisticated,
+            educated, attractive, and relationship&#8209;minded singles.
+          </p>
+          <p class="about__signature">
+            Monique Le<br>
+            <span class="muted">Founder &amp; Chief Matchmaker</span>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <hr class="separator" aria-hidden="true">
+
+
+    <!-- ════════════════════════════════════════
+         SERVICES (prose with hairlines)
+         ════════════════════════════════════════ -->
+
+    <section class="section-narrow reveal" style="--i:2" id="services">
+      <h2>What We Offer</h2>
+      <p class="section-intro">
+        From personalized matchmaking to relationship guidance, we offer a
+        full spectrum of services designed for discerning individuals seeking
+        meaningful connections.
+      </p>
+
+      <div class="services-list">
+        <article class="service">
+          <h3>Professional Matchmaking</h3>
+          <p>
+            Personalized introductions between carefully vetted,
+            relationship&#8209;minded professionals. We take the time to
+            understand your values, lifestyle, and aspirations to find your
+            ideal partner.
+          </p>
+        </article>
+
+        <article class="service">
+          <h3>Relationship Advisory</h3>
+          <p>
+            Full&#8209;service relationship advisory for couples and
+            individuals. We advise on building lasting partnerships,
+            navigating challenges, and making sound decisions for your
+            personal life and legacy.
+          </p>
+        </article>
+
+        <article class="service">
+          <h3>Date Coaching</h3>
+          <p>
+            We work with frustrated singles to focus their time and energy
+            on selecting, approaching, and dating the right mate — helping
+            you live the best life you can from our pool of qualified
+            singles.
+          </p>
+        </article>
+
+        <article class="service">
+          <h3>Discretion &amp; Confidentiality</h3>
+          <p>
+            Our affluent clients value privacy. Every consultation, profile,
+            and introduction is handled with the utmost discretion. Your
+            personal information is always protected.
+          </p>
+        </article>
+      </div>
+    </section>
+
+
+    <!-- ════════════════════════════════════════
+         TESTIMONIAL 1 (T3 pull-quote)
+         ════════════════════════════════════════ -->
+
+    <blockquote class="pull-quote section-narrow reveal" style="--i:3">
+      <p>
+        &#8220;Seattle Love Broker went above and beyond. Monique truly
+        listened to what I was looking for and introduced me to someone who
+        matched not just on paper, but in values and life vision. I could
+        not be happier.&#8221;
+      </p>
+      <footer>
+        <cite>A Grateful Client — Seattle, WA</cite>
+      </footer>
+    </blockquote>
+
+
+    <!-- ════════════════════════════════════════
+         IMAGE BAND (full-bleed break-out)
+         ════════════════════════════════════════ -->
+
+    <section class="image-band reveal" style="--i:4" aria-label="Featured recognition">
+      <img src="https://mllovebroker.com/wp-content/uploads/2018/01/couple_park.png"
+           alt="A couple enjoying a walk together in a Seattle park"
+           width="1600" height="900" loading="lazy">
+      <div class="image-band__overlay">
+        <p class="image-band__text">
+          Recognized by King 5 News — Best of Western Washington
+        </p>
+      </div>
+    </section>
+
+
+    <!-- ════════════════════════════════════════
+         PROCESS (F4 step sequence)
+         ════════════════════════════════════════ -->
+
+    <section class="section-narrow reveal" style="--i:5" id="process">
+      <h2>How It Works</h2>
+      <p class="section-intro">
+        A thoughtful, personalized approach to finding your perfect match.
+      </p>
+
+      <ol class="process-steps">
+        <li class="process-step">
+          <span class="process-number" aria-hidden="true">1</span>
+          <div>
+            <h3>Consultation</h3>
+            <p>
+              We begin with an in&#8209;depth, confidential conversation to
+              understand your values, lifestyle, and what you seek in a
+              partner.
+            </p>
+          </div>
+        </li>
+        <li class="process-step">
+          <span class="process-number" aria-hidden="true">2</span>
+          <div>
+            <h3>Profile &amp; Screening</h3>
+            <p>
+              Your personal profile is crafted with care. Every potential
+              match is thoroughly screened to ensure compatibility and
+              quality.
+            </p>
+          </div>
+        </li>
+        <li class="process-step">
+          <span class="process-number" aria-hidden="true">3</span>
+          <div>
+            <h3>Curated Matching</h3>
+            <p>
+              Our experienced matchmakers handpick introductions from our
+              extensive database, based on shared values and genuine
+              compatibility.
+            </p>
+          </div>
+        </li>
+        <li class="process-step">
+          <span class="process-number" aria-hidden="true">4</span>
+          <div>
+            <h3>Introduction &amp; Support</h3>
+            <p>
+              We arrange your introduction and provide ongoing guidance,
+              date coaching, and support throughout your journey together.
+            </p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <hr class="separator" aria-hidden="true">
+
+
+    <!-- ════════════════════════════════════════
+         TESTIMONIALS 2 & 3
+         ════════════════════════════════════════ -->
+
+    <blockquote class="pull-quote section-narrow reveal" style="--i:6">
+      <p>
+        &#8220;The level of professionalism and personal attention is
+        unmatched. After years of disappointing dating apps, working with
+        a real matchmaker who understands what accomplished professionals
+        need was a revelation.&#8221;
+      </p>
+      <footer>
+        <cite>A Satisfied Professional — Bellevue, WA</cite>
+      </footer>
+    </blockquote>
+
+    <blockquote class="pull-quote section-narrow reveal" style="--i:7">
+      <p>
+        &#8220;Monique&#8217;s expertise and genuine care for her clients set
+        Seattle Love Broker apart. The process was discreet, thoughtful, and
+        ultimately life&#8209;changing. I recommend her to anyone serious
+        about finding a lasting relationship.&#8221;
+      </p>
+      <footer>
+        <cite>A Happy Couple — Pacific Northwest</cite>
+      </footer>
+    </blockquote>
+
+    <hr class="separator" aria-hidden="true">
+
+
+    <!-- ════════════════════════════════════════
+         FAQ (accordion)
+         ════════════════════════════════════════ -->
+
+    <section class="section-narrow reveal" style="--i:8" id="faq">
+      <h2>Questions You May Have</h2>
+
+      <details class="faq-item">
+        <summary>How does the matchmaking process work?</summary>
+        <div class="faq-answer"><div class="faq-answer__inner">
+          <p>
+            Our process begins with a private consultation where we learn
+            about your values, lifestyle, and what you are looking for in a
+            partner. From there, our team handpicks introductions from our
+            exclusive database of screened, relationship&#8209;minded
+            professionals. We provide ongoing support and coaching throughout
+            the journey.
+          </p>
+        </div></div>
+      </details>
+
+      <details class="faq-item">
+        <summary>Who is your typical client?</summary>
+        <div class="faq-answer"><div class="faq-answer__inner">
+          <p>
+            Our clients are successful, accomplished individuals — business
+            owners, professionals, civic leaders, and high&#8209;profile
+            individuals of all backgrounds and ethnicities. They are people
+            who value quality, discretion, and are serious about finding a
+            lasting relationship.
+          </p>
+        </div></div>
+      </details>
+
+      <details class="faq-item">
+        <summary>Is the service confidential?</summary>
+        <div class="faq-answer"><div class="faq-answer__inner">
+          <p>
+            Absolutely. Discretion and confidentiality are at the core of
+            everything we do. Your personal information, consultations, and
+            introductions are handled with the utmost privacy and
+            professionalism.
+          </p>
+        </div></div>
+      </details>
+
+      <details class="faq-item">
+        <summary>Do you work with clients outside of Seattle?</summary>
+        <div class="faq-answer"><div class="faq-answer__inner">
+          <p>
+            Yes. While we are based in Seattle and Bellevue, Washington, we
+            work with discerning singles across the United States. Our
+            database is one of the largest on the West Coast, and we
+            regularly facilitate introductions nationally.
+          </p>
+        </div></div>
+      </details>
+
+      <details class="faq-item">
+        <summary>What other services do you offer beyond matchmaking?</summary>
+        <div class="faq-answer"><div class="faq-answer__inner">
+          <p>
+            In addition to professional matchmaking, we offer relationship
+            advisory services, date coaching for singles, and guidance for
+            couples navigating relationship challenges or divorce. We help
+            our clients craft smart, practical solutions for their personal
+            lives.
+          </p>
+        </div></div>
+      </details>
+
+      <details class="faq-item">
+        <summary>How do I get started?</summary>
+        <div class="faq-answer"><div class="faq-answer__inner">
+          <p>
+            Simply click &#8220;Book a Consultation&#8221; at the top of this
+            page, or contact us directly. We will schedule a confidential
+            consultation to discuss your needs and determine how we can best
+            assist you.
+          </p>
+        </div></div>
+      </details>
+    </section>
+
+    <hr class="separator" aria-hidden="true">
+
+
+    <!-- ════════════════════════════════════════
+         CLOSING CTA
+         ════════════════════════════════════════ -->
+
+    <section class="section-narrow letter-closing reveal" style="--i:9" id="cta">
+      <h2>Your Story Begins Here</h2>
+      <p>
+        Whether you are looking for a life partner, navigating a relationship
+        challenge, or ready for a fresh start — Seattle Love Broker is here
+        to guide you.
+      </p>
+      <p class="cta-wrap">
+        <a href="https://mllovebroker.com/register/" class="cta-link" id="cta-register">
+          Register now →
+        </a>
+        <a href="https://mllovebroker.com/contact-us/" class="cta-link cta-link--muted" id="cta-contact">
+          Contact us →
+        </a>
+      </p>
+    </section>
+
+  </main>
+
+
+  <!-- ════════════════════════════════════════
+       FOOTER (Ft6 Letter close)
+       ════════════════════════════════════════ -->
+
+  <footer class="foot-letter" id="footer" role="contentinfo">
+    <p class="foot-letter__close">
+      Warmly,<br>
+      <span class="foot-letter__sign">— Monique Le</span>
+    </p>
+    <p class="foot-letter__location">Seattle &amp; Bellevue, Washington</p>
+
+    <div class="foot-letter__social">
+      <a href="https://www.facebook.com/MLLoveBroker/" class="foot-letter__social-link" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+      </a>
+      <a href="https://twitter.com/SeaLoveBroker" class="foot-letter__social-link" aria-label="X (Twitter)" target="_blank" rel="noopener noreferrer">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+      </a>
+      <a href="https://www.instagram.com/seattlelovebroker/" class="foot-letter__social-link" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
+      </a>
+      <a href="https://www.linkedin.com/company/seattle-love-broker" class="foot-letter__social-link" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2zM4 6a2 2 0 110-4 2 2 0 010 4z"/></svg>
+      </a>
+    </div>
+
+    <p class="foot-letter__ps">
+      P.S. — We would love to hear from you.
+      <a href="https://mllovebroker.com/contact-us/">Write to us</a> or
+      <a href="https://mllovebroker.com/register/">register</a>
+      to schedule your confidential consultation.
+    </p>
+
+    <p class="foot-letter__copy">
+      &copy; <span id="footer-year"></span> Seattle Love Broker. All Rights Reserved.
+    </p>
+  </footer>
+
+
+  <!-- ════════════════════════════════════════
+       SCRIPT (progressive enhancement)
+       ════════════════════════════════════════ -->
+
+  <script>
+    /* Scroll-reveal (IntersectionObserver — reveal once) */
+    (function () {
+      var observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.08, rootMargin: '0px 0px -30px 0px' });
+
+      document.querySelectorAll('.reveal').forEach(function (el) {
+        observer.observe(el);
+      });
+    })();
+
+    /* Footer year */
+    (function () {
+      var el = document.getElementById('footer-year');
+      if (el) el.textContent = new Date().getFullYear();
+    })();
+
+    /* Smooth scroll for anchor links */
+    document.querySelectorAll('a[href^="#"]').forEach(function (a) {
+      a.addEventListener('click', function (e) {
+        var id = a.getAttribute('href');
+        if (id.length < 2) return;
+        var target = document.querySelector(id);
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,70 @@
+/* Hallmark · design tokens
+ * theme: custom · vibe: "hushed salon, aged parchment, quiet authority"
+ * paper: oklch(96.5% 0.012 75) · accent: oklch(58% 0.14 80) muted-gold
+ * display: Cormorant Garamond · body: Crimson Pro
+ * axes: light / classical-serif / warm
+ */
+
+:root {
+  /* ─── Colour ─── */
+  --color-paper:     oklch(96.5% 0.012 75);
+  --color-paper-2:   oklch(92%   0.018 72);
+  --color-paper-3:   oklch(88%   0.014 74);
+  --color-rule:      oklch(82%   0.010 75);
+  --color-neutral:   oklch(55%   0.008 70);
+  --color-muted:     oklch(42%   0.008 65);
+  --color-ink:       oklch(19%   0.010 55);
+  --color-accent:    oklch(58%   0.14  80);
+  --color-focus:     oklch(50%   0.16  80);
+  --color-overlay:   oklch(19%   0.010 55 / 0.60);
+
+  /* ─── Typography ─── */
+  --font-display:    "Cormorant Garamond", ui-serif, Georgia, serif;
+  --font-body:       "Crimson Pro", ui-serif, Georgia, serif;
+
+  /* ─── Type scale (major-third 1.25, 18 px body) ─── */
+  --text-xs:         0.64rem;
+  --text-sm:         0.8rem;
+  --text-base:       1.125rem;
+  --text-md:         1.25rem;
+  --text-lg:         1.5625rem;
+  --text-xl:         1.953rem;
+  --text-2xl:        2.441rem;
+  --text-3xl:        3.052rem;
+  --text-display:    clamp(2.75rem, 5vw + 1rem, 4.5rem);
+  --text-display-s:  clamp(2rem, 3vw + 0.75rem, 3.25rem);
+
+  /* ─── Spacing (4 pt base) ─── */
+  --space-3xs:  0.125rem;
+  --space-2xs:  0.25rem;
+  --space-xs:   0.5rem;
+  --space-sm:   0.75rem;
+  --space-md:   1rem;
+  --space-lg:   1.5rem;
+  --space-xl:   2.5rem;
+  --space-2xl:  4rem;
+  --space-3xl:  6rem;
+  --space-4xl:  9rem;
+
+  /* ─── Layout ─── */
+  --page-gutter:     clamp(1.25rem, 5vw, 4rem);
+  --letter-measure:  58ch;
+
+  /* ─── Motion ─── */
+  --ease-out:    cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in:     cubic-bezier(0.7,  0, 0.84, 0);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-micro:   120ms;
+  --dur-short:   220ms;
+  --dur-long:    420ms;
+
+  /* ─── Depth ─── */
+  --z-base:      1;
+  --z-raised:    10;
+  --z-sticky:    200;
+  --z-modal:     400;
+
+  /* ─── Rules ─── */
+  --rule-hairline: 1px solid var(--color-rule);
+  --radius-sm:     2px;
+}

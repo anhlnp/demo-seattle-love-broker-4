@@ -1,0 +1,33 @@
+{
+  "version": "1.1.0",
+  "runs": [
+    {
+      "timestamp": "2026-08-03T08:01:15Z",
+      "verb": "build",
+      "genre": "editorial",
+      "macrostructure": "Letter",
+      "theme": "custom",
+      "vibe": "hushed salon, aged parchment, quiet authority",
+      "nav": "N9",
+      "footer": "Ft6",
+      "enrichment": "none",
+      "palette": {
+        "paper": "oklch(96.5% 0.012 75)",
+        "ink": "oklch(19% 0.010 55)",
+        "accent": "oklch(58% 0.14 80)"
+      },
+      "fonts": {
+        "display": "Cormorant Garamond",
+        "body": "Crimson Pro"
+      },
+      "knobs": {
+        "H5": "salutation=greeting, body=2-paragraphs, signoff=typed-name",
+        "N9": "CTA=outlined, wordmark=image, padding-block=spacious",
+        "Ft6": "signoff=italic, postscript=yes, width=60ch",
+        "T3": "face=serif-italic, width=50ch, attribution=separate-band",
+        "C3": "underline=solid, hover=thicken, arrow=→"
+      },
+      "output": "index.html"
+    }
+  ]
+}
